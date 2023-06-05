@@ -1,3 +1,0 @@
-C:/Users/Dev1/Desktop/test/logger1/build/CMakeFiles/Logger1.dir
-C:/Users/Dev1/Desktop/test/logger1/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Dev1/Desktop/test/logger1/build/CMakeFiles/ZERO_CHECK.dir

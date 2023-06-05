@@ -1,3 +1,0 @@
-C:/Users/Dev1/Desktop/test/uploader/build/CMakeFiles/uploader.dir
-C:/Users/Dev1/Desktop/test/uploader/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Dev1/Desktop/test/uploader/build/CMakeFiles/ZERO_CHECK.dir
