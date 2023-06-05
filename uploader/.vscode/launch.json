@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "C/C++: cl.exe build and debug active file",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\Debug\\uploader.exe",
+            "args": ["C:\\Users\\pentr\\OneDrive\\Asztali gép\\test.txt", "172.22.221.3:2048", "10000"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "integratedTerminal",
+        }
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.0)
+
+project(logger)
+
+file(GLOB SOURCES "main/src/*.c")
+file(GLOB HEADERS "main/inc/*.h")
+
+
+include_directories(inc)
+
+add_subdirectory(dll)
+
+add_executable(logger ${SOURCES} ${HEADERS})
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS")
+
+target_compile_definitions(logger PRIVATE UNICODE _UNICODE)
+
+set_target_properties(logger PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_BINARY_DIR}/bin")
+set_target_properties(logger PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/bin")

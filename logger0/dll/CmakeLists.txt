@@ -1,0 +1,17 @@
+set(NAME "logger_dll")
+
+project(${NAME})
+
+set(DLL_LOCATION "../bin/lib/")
+set(DLL_NAME "${NAME}.dll")
+
+file(GLOB SOURCES "src/*.c")
+file(GLOB HEADERS "inc/*.h")
+configure_file("${CMAKE_SOURCE_DIR}/shared/inc/cmake_vars.h.in" "${CMAKE_SOURCE_DIR}/shared/inc/cmake_vars.h")
+
+add_library(${NAME} SHARED ${SOURCES} ${HEADERS})
+set_target_properties(${NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG "${DLL_LOCATION}")
+set_target_properties(${NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE "${DLL_LOCATION}")
+
+
+

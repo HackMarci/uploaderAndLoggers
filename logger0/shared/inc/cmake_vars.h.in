@@ -1,0 +1,6 @@
+#ifndef __CMAKE_VARS_H
+#define __CMAKE_VARS_H
+
+#define CM_DLL_LOCATION L"${DLL_LOCATION}${DLL_NAME}"
+
+#endif

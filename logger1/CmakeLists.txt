@@ -1,0 +1,10 @@
+Set(NAME Logger1)
+
+file(GLOB SOURCES "src/*.c")
+file(GLOB HEADERS "inc/*.h")
+
+include_directories(inc)
+
+add_executable(${NAME} ${SOURCES} ${HEADERS})
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS")
+target_compile_definitions(${NAME} PRIVATE UNICODE _UNICODE)
