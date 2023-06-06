@@ -112,7 +112,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR args, in
 
     // message loop
     MSG msg;
-    while (GetMessage(&msg, NULL, 0, 0))
+    while (GetMessage(&msg, NULL, 0, 0) != 0)
     {
         TranslateMessage(&msg);
         DispatchMessage(&msg);
