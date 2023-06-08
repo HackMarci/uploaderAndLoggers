@@ -1,10 +1,10 @@
 #include "../inc/dll.h"
 
 BOOL APIENTRY DllMain(HMODULE hModule,
-                      DWORD  ul_reason_for_call,
+                      DWORD  fdwReason,
                       LPVOID lpReserved)
 {
-    switch (ul_reason_for_call)
+    switch (fdwReason)
     {
     case DLL_PROCESS_ATTACH: {
         // A process is loading the DLL.

@@ -68,7 +68,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR args, in
         mbszArgv[i][mbstrByteLen] = '\0';
     }
 
-    // Handle args
+    // Parse args
     if (__argc != NUMARGS + 1)
     {
         if (context.con)
