@@ -31,8 +31,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR args, in
         int mbstrByteLen = WideCharToMultiByte(CP_UTF8, 0, __wargv[i], wstrCharLen, NULL, 0, NULL, NULL);
         if (mbstrByteLen == 0)
         {
-           fprintf(stderr, "Faild to translate arguments to multibyte. Exiting with error: %d\n", GetLastError());
-           return EXIT_FAILURE;
+            if (con)
+                fprintf(stderr, "Faild to translate arguments to multibyte. Exiting with error: %d\n", GetLastError());
+            return EXIT_FAILURE;
         }
         
         mbszArgv[i] = malloc(mbstrByteLen + 1);
